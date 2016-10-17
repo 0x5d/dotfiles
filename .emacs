@@ -10,6 +10,8 @@
 (unless (package-installed-p 'atom-one-dark-theme)
   (package-install 'atom-one-dark-theme))
 
+(global-linum-mode t)
+
 (load-theme 'atom-one-dark t)
 
 (add-hook 'cider-repl-mode-hook #'company-mode)
