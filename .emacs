@@ -12,6 +12,9 @@
 
 (load-theme 'atom-one-dark t)
 
+(add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-mode-hook #'company-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -20,7 +23,7 @@
  '(custom-safe-themes
    (quote
     ("1160f5fc215738551fce39a67b2bcf312ed07ef3568d15d53c87baa4fd1f4d4e" default)))
- '(package-selected-packages (quote (atom-one-dark-theme cider))))
+ '(package-selected-packages (quote (company atom-one-dark-theme cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
