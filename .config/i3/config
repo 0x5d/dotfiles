@@ -164,3 +164,6 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+# Multi-screen screenshots with scrot
+bindsym --release Shift+Print exec maim --select --hidecursor ~/Pictures/$(date +%s).png
