@@ -164,3 +164,6 @@ bindsym --release Shift+Print exec maim --select --hidecursor ~/Pictures/$(date 
 
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# set wallpaper
+exec_always feh --bg-scale ~/Pictures/Wallpapers/bg
