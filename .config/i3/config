@@ -142,8 +142,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# enable screen locking
+bindsym $mod+z exec ~/.config/i3/lock.sh ~/.config/i3/icon.png
+
 # start rofi
-bindsym $mod+d exec rofi -show run -lines 20 -eh 1.3 -opacity "85" -bw 0 -font "System San Francisco Display 10"
+bindsym $mod+d exec rofi -show drun
 
 # enable language toggling
 exec "setxkbmap -option 'grp:alt_shift_toggle'"
@@ -159,7 +162,7 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Multi-screen screenshots with scrot
+# variable-area screenshots with maim
 bindsym --release Shift+Print exec maim --select --hidecursor ~/Pictures/$(date +%s).png
 
 # start polybar
